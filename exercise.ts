@@ -14,7 +14,7 @@ let number :number = 9;
 let numberResult= 0;
 
 for (let i = 1 ; i <= 10 ; i++){
-    console.log(`${number} x ${i}`)
+    console.log(`${number} x ${i} = ${number * i}`)
 }
 
 // 2. Write a code to check whether a string is a palindrome or not
