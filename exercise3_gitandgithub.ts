@@ -76,7 +76,7 @@ const searchString: string = "ell";
 let replaceResult:string = stringFormat.replace(searchString,"");
 
 if (replaceResult === stringFormat){
-    console.log("Unable to remove the string that you're looking for");
+    console.log("Unable to find the string that you're looking for");
 } else {
     console.log(replaceResult);
 }
@@ -133,6 +133,7 @@ console.log(textResult);
 
 const num1:number = 42;
 const num2:number = 27;
+let outputNumber = 0;
 
 if (num1 > num2) {
     console.log(num1);
@@ -191,24 +192,32 @@ console.log(smallest,middle,largest)
 //     Example ; "hello" -> 1
 
 let dataInput = 12;
+let output = 0;
 
 if (typeof dataInput === "string") {
-    console.log(1);
+    output = 1;
 } else if (typeof dataInput === "number") {
-    console.log(2);
+    output = 2;
 } else {
-    console.log(3);
+    output = 3;
 }
 
+console.log(output);
 
 // 11. Write a code to change every letter a into * from a string of input
 //     Example : 'An apple a day keeps the doctor away' -> '*n *pple d*y keeps the doctor *w*y'
 
-let stringChange = "an apple a day keeps the doctor away";
+let stringChange = "An apple a day keeps the doctor away";
 let wordConvert= "";
+
+stringChange = stringChange.toLowerCase();
+console.log(stringChange.replace(/a/g,"*"));
+
+// or we can use for loop
 
 for (let i = 0 ; i < stringChange.length ; i++) {
     stringChange = stringChange.replace("a","*");
     wordConvert += stringChange.slice(i, i + 1);
 }
 console.log(wordConvert);
+

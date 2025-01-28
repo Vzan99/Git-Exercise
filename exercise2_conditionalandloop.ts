@@ -1,4 +1,4 @@
-//Exercise Looping
+//Exercise Conditional and Loop Statements
 
 //  1.  Write a code to check whether the number is odd or even
 //      Example : 25 -> odd number, 2-> even number
